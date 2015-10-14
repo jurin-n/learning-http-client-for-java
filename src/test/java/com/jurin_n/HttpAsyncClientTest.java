@@ -19,11 +19,13 @@ import org.apache.http.nio.client.methods.AsyncCharConsumer;
 import org.apache.http.nio.client.methods.HttpAsyncMethods;
 import org.apache.http.nio.protocol.HttpAsyncRequestProducer;
 import org.apache.http.protocol.HttpContext;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class HttpAsyncClientTest {
 
-	@Test
+	//@Test
+	@Ignore
 	public void testQuickStartSample1() throws InterruptedException, ExecutionException, IOException {
 		CloseableHttpAsyncClient httpclient = HttpAsyncClients.createDefault();
 		
@@ -45,7 +47,8 @@ public class HttpAsyncClientTest {
 	}
 
 	
-	@Test
+	//@Test
+	@Ignore
 	public void testQuickStartSample2() throws InterruptedException, IOException {
 		CloseableHttpAsyncClient httpclient = HttpAsyncClients.createDefault();
 
@@ -78,7 +81,8 @@ public class HttpAsyncClientTest {
 		httpclient.close();
 	}
 	
-	@Test
+	//@Test
+	@Ignore
 	public void testQuickStartSample3() throws InterruptedException, IOException {
 		CloseableHttpAsyncClient httpclient = HttpAsyncClients.createDefault();
 		
@@ -133,3 +137,4 @@ public class HttpAsyncClientTest {
 		httpclient.close();
 	}
 }
+
